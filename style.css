@@ -1,11 +1,10 @@
 *{
-    font-style: 'Arial', sans-serif;
+    font-style: Arial;
+    font-family: sans-serif;
 }
 
 .header_1{
-    white-space: pre;
     font-size: 80px;
-    font-style: 'Arial', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -32,6 +31,16 @@
     background-color: #FFFFFF;
 }
 
+.black_button{
+    font-size:  14px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    padding: 10px;
+    text-transform: uppercase;
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
 .block{
     border: 1px solid #ccc;
     border-radius: 50px;
@@ -41,16 +50,29 @@
     margin: 20px;
     display: flex;
 }
-
-  
-  .horizont_alarm {
-    display: flex;
-    justify-content: flex-end;
-    gap: 10px;
+  .double_grid{
+    display: grid;
+    grid-template-columns: repeat(2, 520px);
   }
 
-  .wrap_flex{
+  .wrap_center{
     display: flex;
-    flex-wrap: wrap;
-    justify-content="center"
+    justify-content: center;
+  }
+
+  .container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  .button_container {
+    justify-content: flex-end;
+    display: flex;
+    gap: 20px;
+  }
+
+  .space_between{
+    display: grid;
+    grid-template-columns: repeat(2, 370px);
   }
