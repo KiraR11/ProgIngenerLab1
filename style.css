@@ -49,6 +49,8 @@
     height: 450px;
     margin: 20px;
     display: flex;
+    
+    
 }
   .double_grid{
     display: grid;
@@ -61,18 +63,31 @@
   }
 
   .container {
-    display: flex;
+    justify-content: space-between;
     align-items: flex-end;
     justify-content: space-between;
   }
 
   .button_container {
-    justify-content: flex-end;
     display: flex;
+    justify-content: flex-end;
     gap: 20px;
   }
 
   .space_between{
-    display: grid;
-    grid-template-columns: repeat(2, 370px);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .test {
+    display: flex;
+    align-self: flex-end;
+    flex-direction: column;
+  }
+
+  .image{
+    display: flex;
+    right:100%;
+    width: 30px;
+    height: 30px;
   }
