@@ -1,93 +1,120 @@
 *{
     font-style: Arial;
     font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
 }
 
-.header_1{
-    font-size: 80px;
-    font-weight: bold;
-    text-transform: uppercase;
+body {
+  font-weight: 300;
+  background-color: #fff;
+  color: #000;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.header_2{
-    font-size: 32px;
+.header{
+  padding: 20px;;
+  width: 100%;
+
+  display: flex;
+  justify-content:space-between;
+  align-items: flex-end;
 }
 
-.text{
-    font-style: Intent;
-    font-size: 20px;
+h1{
+  font-size: 80px;
+  
 }
 
-.smail-text{
-    font-size: 14px;
+h2{
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.nav-menu{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-.base_button{
-    font-size:  14px;
-    border: 1px solid #ccc;
-    border-radius: 30px;
-    padding: 10px;
-    text-transform: uppercase;
-    background-color: #FFFFFF;
+.nav-item{
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  border: 1px solid #bbb;
+  background-color: #fff;
+  color: #000;
+  border-radius: 30px;
+  padding: 8px 16px;
+}
+.active{
+  font-weight: bold;
+  background-color: #000;
+  color: #fff;
 }
 
-.black_button{
-    font-size:  14px;
-    border: 1px solid #ccc;
-    border-radius: 30px;
-    padding: 10px;
-    text-transform: uppercase;
-    background-color: #000000;
-    color: #FFFFFF;
+.card-wrapper{
+  width: 820px;
+  display: flex;
+  flex-wrap: wrap;
+  gap:20px;
 }
 
-.block{
-    border: 1px solid #ccc;
-    border-radius: 50px;
-    padding: 40px;
-    width: 400px;
-    height: 450px;
-    margin: 20px;
-    display: flex;
-    
-    
+.card-regular{
+  border: 1px solid rgb(123, 123, 123);
+  width: 400px;
+  height: 450px;
+  padding: 40px 30px;
+  border-radius: 50px;
+
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
-  .double_grid{
-    display: grid;
-    grid-template-columns: repeat(2, 520px);
-  }
 
-  .wrap_center{
-    display: flex;
-    justify-content: center;
-  }
+.card-header{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-date{
+  font-size: 20px;
+}
+.card-text{
+  font-size: 14px;
+}
 
-  .container {
-    justify-content: space-between;
-    align-items: flex-end;
-    justify-content: space-between;
-  }
+.card-orange{
+  color: white;
+  background: linear-gradient(0.25turn, #FEBC4E, #FC840E);
+}
+.card-purple{
+  color: #fff;
+  background: linear-gradient(0.25turn, #B35FDD, #6C30F7);
+  
+}
 
-  .button_container {
-    display: flex;
-    justify-content: flex-end;
-    gap: 20px;
-  }
+.card-icon{
+  width: 48px;
+  height: 48px;
+}
 
-  .space_between{
-    display: flex;
-    justify-content: space-between;
-  }
+.footer{
+  width: 100%;
+  padding: 20px;
+  
+  
+}
 
-  .test {
-    display: flex;
-    align-self: flex-end;
-    flex-direction: column;
-  }
-
-  .image{
-    display: flex;
-    right:100%;
-    width: 30px;
-    height: 30px;
-  }
+.footer-text{
+  font-size: 14px;
+  text-decoration: underline;
+  text-decoration-color: #bbb;
+}
